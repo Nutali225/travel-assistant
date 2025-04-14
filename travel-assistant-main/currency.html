@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курсы валют за 4 рубля</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/currency.css">
+    <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+    <header>
+        <button id="theme-toggle" class="theme-btn">🌞</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="currency.html">Курсы валют за 4 рубля </a></li>
+                <li><a href="weather.html">Погода за 2 рубля</a></li>
+                <li><a href="calculator.html">Конвертер за 5 рублей</a></li>
+                <li><a href="tips.html">Советы за 10 рублей</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="currency-section">
+            <h1>Курсы валют за 4 рубля</h1>
+            <p>Получайте актуальные данные о курсе валют в реальном времени.</p>
+            <div class="currency-box">
+                <label for="currency">Выберите валюту:</label>
+                <select id="currency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="JPY">JPY</option>
+                </select>
+                <button id="getRates">Получить курс</button>
+            </div>
+            <div id="rates" class="currency-table"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Умный помощник путешественника</p>
+    </footer>
+    
+    <script src="js/theme.js" defer></script>
+    <script src="js/currency.js" defer></script>
+</body>
+</html>

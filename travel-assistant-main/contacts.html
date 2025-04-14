@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+    <header>
+        <button id="theme-toggle" class="theme-btn">🌞</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="currency.html">Курсы валют за 4 рубля</a></li>
+                <li><a href="weather.html">Погода за 2 рубля</a></li>
+                <li><a href="calculator.html">Конвертер за 5 рублей</a></li>
+                <li><a href="tips.html">Советы за 10 рублей</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Свяжитесь с нами</h1>
+        <p>Если у вас есть вопросы или предложения, заполните форму ниже.</p>
+        
+        <form id="contactForm">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">номер  карты для оплаты:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Сумма:</label>
+            <textarea id="message" rows="5" required></textarea>
+
+            <button type="submit">Отправить</button>
+        </form>
+
+        <p id="formStatus"></p>
+    </main>
+
+    <footer>
+        <p>© 2025 Умный помощник путешественника</p>
+    </footer>
+
+    <script src="js/contacts.js"></script>
+    <script src="js/theme.js" defer></script>
+</body>
+</html>
